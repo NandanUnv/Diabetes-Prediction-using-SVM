@@ -31,16 +31,13 @@ clf = svm.SVC(kernel='linear')
 clf.fit(x_train, y_train)
 
 
-
 with open('diabetes.pkl' , 'wb') as f:
     pickle.dump(clf, f)
-
 
 
 from flask import Flask, render_template, request
 import pickle
 from sklearn.svm import SVC
-
 
 
 app = Flask(__name__)
@@ -70,7 +67,6 @@ def sub():
         prediction = model.predict(std_data)[0]
         print(prediction)
     return render_template('diabetes.html', prediction=prediction)
-
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 # Diabetes-Prediction-using-SVM
 
 
-IDE: jupyter notebook
+IDE: jupyter notebook / Pycharm 
 
 Packages: Scikit-learn, Flask, Pickle
 

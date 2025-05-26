@@ -19,6 +19,6 @@ Accuracy on test dataset: 72.7%
 
 Web interface using Flask:
 
-<img width="1079" alt="image" src="https://github.com/user-attachments/assets/23e7d270-b4d3-4e48-abb3-b4be38693373" />
+![image](https://github.com/user-attachments/assets/b810f994-30d7-4b77-9e10-2bd2c61f12fc)
 
 

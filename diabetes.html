@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/sad-cartoon-blood-drop-holding-glucose-meter-showing-low-sugar-level-diabetes-awareness-health-icon-medical-concept-character-379700860.jpg">
+
+    <style>
+        body{
+            padding-top:50px;
+            text-align : center;
+
+
+            background-image: url('https://www.sancaktepebolgehastanesi.com/Image/AllImage/diyabetik_koma.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+        }
+        h1{
+            color: darkcyan;
+            padding-bottom: 30px;
+        }
+        div{
+            background-color: white;
+            color: darkred;
+            font-size: larger;
+            text-align: center;
+            height: 150px;
+            width: 300px;
+            padding: 5px 5px 5px 2px;
+            margin-left: 550px;
+        }
+
+        label{
+            text-align: center;
+            color: darkred;
+            font-size: large;
+            display: inline-block;
+            width: 200px;
+        }
+
+        input{
+            text-align: center;
+            display: inline-block;
+            width: 100px;
+        }
+        button{
+            font-size:15px;
+            color: white;
+            background-color: green;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Diabetic Prediction</h1>
+
+    <form action='http://127.0.0.1:5000/submit' method='post'>
+
+        <label for='preg'>Pregnancies: </label><input type='number' name='preg' id='preg' placeholder="ex: ,2,3,4..etc.">
+        <br><br>
+        <label for='gl'>Glucose: </label> <input type='number' name='gl' id='gl' placeholder="ex: 60-200">
+        <br><br>
+        <label for='bp'>Blood Pressure: </label><input type='number' name='bp' id='bp' placeholder="ex: 10-150">
+        <br><br>
+        <label for='st'>Skin Thickness: </label><input type='number' name='st' id='st' placeholder="ex: 0-100">
+        <br><br>
+        <label for='in'>Insulin: </label><input type='number' name='in' id='in' placeholder="ex: 0-900">
+        <br><br>
+        <label for='bmi'>BMI: </label><input type="text" name='bmi' id='bmi' placeholder="ex: 0-70">
+        <br><br>
+        <label for='dpf'>DiabetesPedigreeFunction: </label><input type='text' name='dpf' id='dpf' placeholder="ex: 0-3">
+        <br><br>
+        <label for='age'>Age: </label><input type='number' name='age' id='age' placeholder="ex: 20-85">
+        <br><br>
+        <pre><button type='submit'>Submit </button>         <button type='reset'>Reset</button></pre>
+    </form>
+    <div>
+    <h2> Prediction: </h2>
+    {% if prediction == 1 %}
+    <p><h2>{{"Diabetic"}}</h2></p>
+    {% endif %}
+    {% if prediction == 0 %}
+    <p><h2> {{"Non-Diabetic"}}</h2></p>
+    {% endif %}
+    </div>
+
+</body>
+</html>

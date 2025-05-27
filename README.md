@@ -1,5 +1,8 @@
 # Diabetes-Prediction-using-SVM
 
+This repository consists of 3 files:
+1. "code_file" consists of train and test code for the ML model used. Then, save it using pickle package.
+2. "Web_App" and ".html" files are used to create web interface for the saved model. 
 
 IDE: jupyter notebook / Pycharm 
 

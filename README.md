@@ -6,7 +6,7 @@ This repository consists of 3 files:
 
 IDE: jupyter notebook / Pycharm 
 
-Packages: Scikit-learn, Flask, Pickle
+Packages: Scikit-learn, Flask, Pickle, NumPy, Pandas
 
 Machine Learning model: Support Vector Machine (SVM)
 
